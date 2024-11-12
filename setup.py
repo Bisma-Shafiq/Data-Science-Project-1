@@ -12,7 +12,7 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name='data-science',
+    name='datascienceproject',
     version='0.0.1',
     author='Bisma',
     author_email='shafiqbisma648@gmail.com',
