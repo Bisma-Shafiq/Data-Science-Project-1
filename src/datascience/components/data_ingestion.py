@@ -3,8 +3,9 @@ import sys
 sys.path.append(os.path.join(os.getcwd(), "src"))
 from datascience.logger import logging
 from datascience.exception_handling import CustomException
+from datascience.components.data_transformation import DataTransformation
+from datascience.components.data_transformation import DataTransformationConfig
 import pandas as pd
-from datascience.utils import read_sql_data
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
@@ -22,7 +23,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             ##reading the data from mysql
-            dataset=pd.read_csv("Project\data\StudentsPerformance.csv")
+            dataset=pd.read_csv(r"Project\data\StudentsPerformance.csv")
+
             logging.info("Reading completed mysql database")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
@@ -43,5 +45,7 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e,sys)
 if __name__=="__main__":
-    obj=DataIngestion()
-    obj.initiate_data_ingestion()
+   obj=DataIngestion()
+   train_data,test_data= obj.initiate_data_ingestion()
+   data_transformation = DataTransformation()
+   data_transformation.initiate_data_transormation()

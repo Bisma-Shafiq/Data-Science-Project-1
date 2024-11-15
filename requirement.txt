@@ -9,6 +9,7 @@ pymysql
 python-dotenv
 sqlalchemy
 mysql-connector-python
+dill
 
 
 # -e .
