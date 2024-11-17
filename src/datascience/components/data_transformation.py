@@ -10,7 +10,6 @@ from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
 sys.path.append(os.path.join(os.getcwd(), "src"))
 from datascience.logger import logging
-
 from datascience.exception_handling import CustomException
 from datascience.utils import save_object
 

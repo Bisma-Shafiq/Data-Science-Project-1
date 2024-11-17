@@ -9,6 +9,7 @@ from sklearn.model_selection import GridSearchCV
 sys.path.append(os.path.join(os.getcwd(), "src"))
 from datascience.exception_handling import CustomException
 
+
 def save_object(file_path, obj):
     try:
         dir_path = os.path.dirname(file_path)
@@ -59,3 +60,5 @@ def load_object(file_path):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+
