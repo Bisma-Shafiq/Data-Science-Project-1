@@ -10,6 +10,7 @@ python-dotenv
 sqlalchemy
 mysql-connector-python
 dill
+Flask
 
 
 # -e .
