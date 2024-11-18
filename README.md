@@ -1,9 +1,12 @@
 
 # Student Performance Indicator
 #### An End-to-End Machine Learning Project with Flask Web Application
-![alt text](image.png)
 
-![alt text](image-1.png)
+
+![image](https://github.com/user-attachments/assets/cf79dc18-9a6e-4a95-b764-0b9b0f796b7d)
+
+![image](https://github.com/user-attachments/assets/b01cc6a4-bb74-4f38-82bb-eaeabd1712fa)
+
 
 ### Overview
 The Student Performance Indicator project is an end-to-end machine learning pipeline designed to predict student performance based on academic and demographic factors. It incorporates robust data processing, machine learning model development, evaluation, and deployment as an interactive web application powered by Flask.
